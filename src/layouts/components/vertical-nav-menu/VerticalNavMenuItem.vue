@@ -1,0 +1,70 @@
+<!-- =========================================================================================
+    File Name: VerticalNavMenuItem.vue
+    Description: Vertical NavMenu item component. Extends vuesax framework's 'vs-sidebar-item' component
+    Component Name: VerticalNavMenuItem
+    ----------------------------------------------------------------------------------------
+    Item Name: abjcloudsolutions.com dashboard management portal
+    Developer: Tripcarte Development Team
+    Author URL: https://www.abjcloudsolutions.com/
+========================================================================================== -->
+
+<template>
+  <div
+    v-if="canSee"
+    class="vs-sidebar--item"
+    :class="[
+      {'vs-sidebar-item-active'            : activeLink},
+      {'disabled-item pointer-events-none' : isDisabled}
+    ]" >
+
+      <router-link
+        tabindex="-1"
+        v-if="to"
+        exact
+        :class="[{'router-link-active': activeLink}]"
+        :to="to"
+        :target="target" >
+          <vs-icon v-if="!featherIcon" :icon-pack="iconPack" :icon="icon" />
+          <feather-icon v-else :class="{'w-3 h-3': iconSmall}" :icon="icon" />
+          <slot />
+      </router-link>
+
+      <a v-else :target="target" :href="href" tabindex="-1">
+        <vs-icon v-if="!featherIcon" :icon-pack="iconPack" :icon="icon" />
+        <feather-icon v-else :class="{'w-3 h-3': iconSmall}" :icon="icon" />
+        <slot />
+      </a>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'v-nav-menu-item',
+  props: {
+    icon        	: { type: String,                 default: ""               },
+    iconSmall   	: { type: Boolean,                default: false            },
+    iconPack    	: { type: String,                 default: 'material-icons' },
+    href        	: { type: [String, null],         default: '#'              },
+    to          	: { type: [String, Object, null], default: null             },
+    slug        	: { type: String,                 default: null             },
+    index       	: { type: [String, Number],       default: null             },
+    featherIcon 	: { type: Boolean,                default: true             },
+    target         	: { type: String,                 default: '_self'          },
+    isDisabled	   	: { type: Boolean,                default: false            },
+    permissionName 	: { type: [String, Array],       default: null	    		},
+  },
+  computed: {
+    canSee() {
+		if( Array.isArray(this.permissionName) ) {
+			return this.$store.state.AppActiveUser.permissions.some( r => this.permissionName.includes(r) )
+		} else {
+			return this.$store.state.AppActiveUser.permissions.includes(this.permissionName)
+		}
+    },
+    activeLink() {
+      return ((this.to == this.$route.path) || (this.$route.meta.parent == this.slug) && this.to) ? true : true
+    }
+  }
+}
+
+</script>
