@@ -1,4 +1,4 @@
-# abj-cloud assessment for r.aidy
+# abj-cloud assessment for r.aidy (CRUD)
  ABJ-FRONTEND-VUE-WITH-LARAVEL CRUD-API
  <p>
  </p>
@@ -164,10 +164,5 @@ npm run serve or yarn serve
 - Network: http://192.168.0.114:8080/
 ```
 
-## Third-Party Plugins
-Vuexy Admin comes with useful third party plug-ins to help you building your app quickly.
-
-### agGrid Table
-Description: THE best javascript grid in the world
 
 
