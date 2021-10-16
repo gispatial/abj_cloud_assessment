@@ -123,7 +123,7 @@
 
 # Project setup
 
-$ npm install or $ yarn
+$ npm install or $ yarn | and final just $ yarn serve or $ npm run serve
 
 Compiles and hot-reloads for development:
 
