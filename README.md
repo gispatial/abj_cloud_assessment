@@ -2,10 +2,10 @@
  ABJ-FRONTEND-VUE-WITH-CRUD-API
  <p>
  </p>
- <img src="https://github.com/gispatial/abj_cloud_assessment/blob/master/screen01.png" width="100%">
+ <img src="https://github.com/gispatial/abj_cloud_assessment/blob/rizqbazaar/screen01.png" width="100%">
  <p>
  </p>
- <img src="https://github.com/gispatial/abj_cloud_assessment/blob/master/screen02.png" width="100%">
+ <img src="https://github.com/gispatial/abj_cloud_assessment/blob/rizqbazaar/screen02.png" width="100%">
  New Datasets Table Updated with Export to Xlsx Features.
 
 ## abj-cloud-api
