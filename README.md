@@ -8,6 +8,19 @@
  <img src="https://github.com/gispatial/abj_cloud_assessment/blob/rizqbazaar/screen02.png" width="100%">
  New Datasets Table Updated with Export to Xlsx Features.
 
+## The requirement need for this assessment
+Create a simple web app in Laravel and Vue.js:
+- Authentication: Registration + Login + Forgot Password
+- Table: Developers - ID, First name, Last name, Email, Phone number, Address, Avatar (image)
+- CRUD functionality
+- Allow multiple records deletion
+
+Guidelines:
+1) CRUD - Create, Retrieve, Update, Delete
+2) This need not have to be a very well designed frontend but you may try to make it as cool as possible.
+3) Once you have read this message, please reply with approximate date and time for submission.
+4) Upon completion, push your code to GitHub and reply to this email with link.
+5) Please share number of hours invested to code this functionality. 
 ## abj-cloud-api
 <table data-v-7b6b9330="">
 <thead data-v-7b6b9330="">
