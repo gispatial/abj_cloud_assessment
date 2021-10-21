@@ -2,9 +2,6 @@
 FRONTEND-VUE-WITH-LARAVEL CRUD-API
  <p>
  </p>
- <img src="https://github.com/gispatial/abj_cloud_assessment/blob/rizqbazaar/screen01.png" width="100%">
- <p>
- </p>
  <img src="https://github.com/gispatial/abj_cloud_assessment/blob/rizqbazaar/screen02.png" width="100%">
  New Datasets Table Updated with Export to Xlsx Features.
 
