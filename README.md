@@ -1,5 +1,5 @@
-# abj-cloud assessment for r.aidy (CRUD)
- ABJ-FRONTEND-VUE-WITH-LARAVEL CRUD-API
+# R. AIDY : ABJ-CLOUD-FRONTEND DASHBOARD ASSESSMENT 
+FRONTEND-VUE-WITH-LARAVEL CRUD-API
  <p>
  </p>
  <img src="https://github.com/gispatial/abj_cloud_assessment/blob/rizqbazaar/screen01.png" width="100%">
